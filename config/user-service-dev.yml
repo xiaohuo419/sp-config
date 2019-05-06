@@ -1,0 +1,10 @@
+#bootstrap.yml
+
+spring:
+  cloud:
+    inetutils:
+      ignored-interfaces:   #排除不需要的
+      - VM.*
+      
+      preferred-networks:   #按网段选择
+      - 172.199
